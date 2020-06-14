@@ -34,14 +34,14 @@ html {
 }
 
 body {
-  background-image: url("./images/topography.svg"),
+  /*background-image: url("./images/topography.svg"),
     linear-gradient(110deg, #f93d66, #6d47d9);
   background-size: 340px, auto;
-  min-height: calc(100vh - 100px);
+  min-height: calc(100vh - 100px); */
   margin: 50px;
   /* background: white; */
-  background-attachment: fixed;
-  letter-spacing: -1px;
+  /* background-attachment: fixed;
+  letter-spacing: -1px; */
 }
 
 h1,
@@ -61,7 +61,7 @@ h6 {
   border: 5px solid rgba(0, 0, 0, 0.03);
   border-radius: 3px;
   font-size: 35px;
-  background-color: var(--yellow); /* best colour */
+  background-color: papayawhip /* best colour */
 }
 
 .item p {
