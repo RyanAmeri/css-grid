@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Grid Test</title>
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="item navbar">Navbar</div>
+    <div class="item content">Content</div>
+    <div class="item sidebar">Sidebar</div>
+    <div class="item comments">Comments</div>
+    <div class="item footer">Footer</div>
+</div>
+
+<style>
+
+    .wrapper{
+      background-color: aqua;  
+      display: grid;
+      grid-gap: 1px;
+      grid-template-columns: repeat(3, minmax(180px, 1fr));
+      grid-template-areas: 
+      "navbar navbar navbar"
+      "content content sidebar"
+      "comments comments sidebar"
+      "footer footer footer"
+      ;
+    }
+    .item {
+        background-color: rebeccapurple;
+        border: solid 1px black;
+    }
+    .navbar {
+        grid-area: navbar;
+    }
+    .content {
+        grid-area: content;
+    }
+    .sidebar {
+        grid-area: sidebar;
+    }
+    .comments {
+        grid-area: comments;
+    }
+    .footer {
+        grid-area: footer;
+    }
+
+  </style>
+</body>
+
+</html>
